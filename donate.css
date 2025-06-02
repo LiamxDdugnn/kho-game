@@ -57,12 +57,14 @@
 
 .qr-img {
   width: 40%;
+  height: auto;
   margin: 1rem auto;
   border-radius: 10px;
   display: block;
 }
 .bank-img {
   width: 30%;
+  height: auto;
   margin: 1rem auto;
   border-radius: 10px;
   display: block;
