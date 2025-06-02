@@ -74,20 +74,4 @@ footer {
   color: #fff;
   font-size: 13px;
   opacity: 0.7;
-  font-family: 'Orbitron', sans-serif;
-}
-  Responsive */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  .buttons {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 300px;
-  }
-}
+  font-family: 'Orbitron', sans-
