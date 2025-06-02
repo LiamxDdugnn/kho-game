@@ -1,29 +1,30 @@
-const typedText = document.getElementById("typed-text");
-const words = ["developer", "automation expert", "Esign bypass coder"];
-let wordIndex = 0;
+const textArray = ["iOS Cert Seller", "Frontend Developer", "Script Lua Dev"];
+let index = 0;
 let charIndex = 0;
-let isDeleting = false;
+let typingElement = document.getElementById("typed-text");
+let cursor = document.querySelector(".cursor");
 
-function typeEffect() {
-  const word = words[wordIndex];
-  if (isDeleting) {
-    charIndex--;
-  } else {
+function type() {
+  if (charIndex < textArray[index].length) {
+    typingElement.textContent += textArray[index].charAt(charIndex);
     charIndex++;
-  }
-
-  typedText.textContent = word.slice(0, charIndex);
-
-  if (!isDeleting && charIndex === word.length) {
-    isDeleting = true;
-    setTimeout(typeEffect, 1500);
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    wordIndex = (wordIndex + 1) % words.length;
-    setTimeout(typeEffect, 500);
+    setTimeout(type, 100);
   } else {
-    setTimeout(typeEffect, isDeleting ? 50 : 100);
+    setTimeout(erase, 1500);
   }
 }
 
-document.addEventListener("DOMContentLoaded", typeEffect);
+function erase() {
+  if (charIndex > 0) {
+    typingElement.textContent = textArray[index].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, 50);
+  } else {
+    index = (index + 1) % textArray.length;
+    setTimeout(type, 500);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(type, 1000);
+});
