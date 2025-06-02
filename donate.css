@@ -36,9 +36,10 @@
 
 .donate-content {
   background: white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
-  max-width: 200px;
+  max-width: 300px;
+  max-height: 300px;
   text-align: center;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
