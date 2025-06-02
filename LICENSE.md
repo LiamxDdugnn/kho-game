@@ -15,7 +15,7 @@
   <!-- Profile Section -->
   <section class="about-section" id="about">
     <div class="padding profile">
-      <img alt="Profile Picture" class="profile-pic box-shadow" src="./img/pf/profile-pic.png"/>
+      <img alt="Profile Picture" class="profile-pic box-shadow" src="./img/pf/profile.png"/>
       <h2 style="margin-bottom: 0;">Hi, this is</h2>
       <h1 style="margin-top: 0;">Phạm Tiến Dũng <img alt="" src="./img/icons/badge.png" style="height: 28px;"/></h1>
       <div class="typing">and I'm a <span id="typed-text"></span><span class="cursor">|</span></div>
