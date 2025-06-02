@@ -56,7 +56,8 @@
 
 .qr-img,
 .bank-img {
-  width: 100%;
-  margin: 1rem 0;
+  width: 200%;
+  margin: 1rem auto;
   border-radius: 10px;
+  display: block;
 }
