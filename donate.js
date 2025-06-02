@@ -2,13 +2,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const donateBtn = document.getElementById('donateBtn');
   const donateDialog = document.getElementById('donateDialog');
-  const closeBtn = document.getElementById('closeDonateDialog');
+  const closeDonateDialog = document.getElementById('closeDonateDialog');
 
   donateBtn.addEventListener('click', () => {
     donateDialog.style.display = 'flex';
   });
 
-  closeBtn.addEventListener('click', () => {
+  closeDonateDialog.addEventListener('click', () => {
     donateDialog.style.display = 'none';
   });
 
