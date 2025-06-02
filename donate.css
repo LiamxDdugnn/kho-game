@@ -63,5 +63,16 @@
   width: 180px;
   max-width: 90%;
   border-radius: 12px;
-  box-shadow: 0 2px 12px #0002;
+  box-shadow: 0 2px 12px #0002; 
   margin-bottom: 0.5rem;
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  color: #fff;
+  font-size: 13px;
+  opacity: 0.7;
+  font-family: 'Orbitron', sans-serif;
+}
