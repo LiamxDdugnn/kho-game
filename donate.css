@@ -1,44 +1,45 @@
 /* donate.css */
-#donateDialog {
-  display: none; /* Ẩn mặc định */
+#donateBtn {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  background-color: #ff85b3;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#donateDialog {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
   z-index: 9999;
   justify-content: center;
   align-items: center;
 }
 
-#donateDialog .dialog-content {
-  background: #fff;
+#donateDialog .donate-content {
+  background: white;
   padding: 2rem;
   border-radius: 1rem;
   max-width: 400px;
   text-align: center;
   position: relative;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 #closeDonateDialog {
   position: absolute;
   top: 10px;
   right: 10px;
+  font-size: 1.5rem;
   background: transparent;
   border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-#donateBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 1.8rem;
-  background-color: pink;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
