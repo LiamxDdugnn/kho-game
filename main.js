@@ -1,30 +1,12 @@
-const textArray = ["iOS Cert Seller", "Frontend Developer", "Script Lua Dev"];
-let index = 0;
-let charIndex = 0;
-let typingElement = document.getElementById("typed-text");
-let cursor = document.querySelector(".cursor");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("✅ Trang đã sẵn sàng.");
 
-function type() {
-  if (charIndex < textArray[index].length) {
-    typingElement.textContent += textArray[index].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, 100);
-  } else {
-    setTimeout(erase, 1500);
-  }
-}
+  const links = document.querySelectorAll(".project");
 
-function erase() {
-  if (charIndex > 0) {
-    typingElement.textContent = textArray[index].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, 50);
-  } else {
-    index = (index + 1) % textArray.length;
-    setTimeout(type, 500);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(type, 1000);
+  links.forEach(link => {
+    link.addEventListener("click", (e) => {
+      const text = link.innerText || "Đường dẫn";
+      console.log("🔗 Đã click vào:", text);
+    });
+  });
 });
