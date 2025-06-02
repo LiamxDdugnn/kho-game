@@ -55,10 +55,14 @@
   cursor: pointer;
 }
 
-.qr-img,
-.bank-img {
-  width: 50%;
+.qr-img {
+  width: 40%;
   margin: 1rem auto;
   border-radius: 10px;
   display: block;
 }
+.bank-img {
+  width: 30%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  display: block;
